@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    tools:context=".custom.view.CustomActivity">
+
+    <ImageView
+        android:id="@+id/selected_canvas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/a0001"/>
+
+    <ImageView
+        android:id="@+id/mold_bag"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/mold_bag"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/mold_wallet"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/mold_wallet"
+        android:rotation="90"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/mold_tshirt"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/mold_tshirt_thin"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/mold_bag_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/ripple_mold_button"
+        android:src="@drawable/img_bag"
+        android:scaleType="fitXY"
+        android:padding="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"/>
+
+    <ImageButton
+        android:id="@+id/mold_wallet_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/ripple_mold_button"
+        android:src="@drawable/img_wallet"
+        android:scaleType="fitXY"
+        android:padding="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"/>
+
+    <ImageButton
+        android:id="@+id/mold_shirt_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/ripple_mold_button"
+        android:src="@drawable/img_tshirt"
+        android:scaleType="fitXY"
+        android:padding="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Design"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_bold"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/canvas_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canvas-A120"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="40dp"/>
+
+    <ImageButton
+        android:id="@+id/scale_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:elevation="5dp"
+        android:background="@drawable/ripple_actionbtm_buttom"
+        android:src="@drawable/icon_zoom"
+        android:tint="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="120dp"/>
+
+    <ImageButton
+        android:id="@+id/rotate_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:elevation="5dp"
+        android:background="@drawable/ripple_actionbtm_buttom"
+        android:src="@drawable/icon_rotate"
+        android:tint="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="120dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/make_design_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="디자인 완성하기"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nanum_bold"
+        android:background="@drawable/ripple_longbtm_button"
+        android:elevation="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
